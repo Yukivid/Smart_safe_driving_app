@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Drive</title>
+  <style>
+    html {
+      height: 100%;
+	  width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+	  margin-left: 30%;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .red-btn, .blue-btn {
+      width: 300px;
+      height: 150px;
+      margin: 15px;
+      color: white;
+      border: none;
+      border-radius: 0.625em;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .red-btn {
+      background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+      );
+    }
+
+    .blue-btn {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 8, 144, 1) 0%,
+        rgba(16, 0, 255, 1) 22%,
+        rgba(86, 255, 247, 1) 100%
+      );
+    }
+
+    button:hover {
+      color: rgb(0, 0, 0);
+    }
+
+    button:after {
+      content: "";
+      background: white;
+      position: absolute;
+      z-index: -1;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: all 0.5s;
+    }
+
+    button:hover:after {
+      transform: skewX(-45deg) scale(1, 1);
+      transition: all 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2 class="logo">SafeDrive</h2>
+    </header>
+        <div>
+          <h1 style="color:#31a8da">Welcome to our Safe Driving App</h1>
+          <p style="font-size: 20px; margin-top:20px;">
+            &emsp; 🚗 Drive safe!! 🚦 Monitor alertness with ease!!!
+          </p>
+          <h3 style="color:#31a8da">💡 OUR FEATURES</h3>
+          <ul style="list-style-type: none; padding: 0;">
+            <li style="font-size: 20px;">📸 Real-time camera monitoring</li><br>
+            <li style="font-size: 20px;">😴Sleep detection while driving</li><br>
+            <li style="font-size: 20px;">☹️ Emotion detection</li><br>
+            <li style="font-size: 20px;">📱 Phone usage detection</li>
+          </ul>
+        </div>
+    <div class="card">
+      <button class="red-btn">START CAMERA</button>
+      <button class="blue-btn">STOP CAMERA</button>
+    </div>
+  </div>
+</body>
+</html>
