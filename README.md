@@ -104,6 +104,6 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 
-## ✨ Developed by Hrithik Kumaran K.G
+## ✨ Developed by Deepesh Raj A.Y
 
 If you found this helpful, leave a ⭐ on GitHub!
